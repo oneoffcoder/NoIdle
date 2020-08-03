@@ -39,6 +39,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
+        allowUpdates: true
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./NoIdle/NoIdle/bin/Release/NoIdle.exe
         asset_name: NoIdle.exe

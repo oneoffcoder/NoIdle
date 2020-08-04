@@ -2,9 +2,8 @@ name: .NET
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    tags:
+      - 'v*'
 
 jobs:
   build:
@@ -27,12 +26,12 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: 1.0.2
+        tag_name: ${{ github.ref }}
         release_name: Release ${{ github.ref }}
         body: |
           Automated Release by GitHub Action CI
         draft: false
-        prerelease: true
+        prerelease: false
     - name: Upload Release Asset
       id: upload-release-asset
       uses: actions/upload-release-asset@v1

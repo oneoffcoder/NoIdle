@@ -7,6 +7,10 @@ to work with users that are logged in remotely (e.g. Terminal Services). You sho
 use this tool as specified by this [article](https://4sysops.com/archives/automatically-log-off-idle-users-in-windows/).
 There are [other ways](https://michlstechblog.info/blog/windows-automatically-logout-a-user-on-inactive/) to accomplish this goal as well.
 
+# Releases
+
+Download a release of [NoIdle.exe](https://github.com/oneoffcoder/NoIdle/releases).
+
 # Citation
 
 ```

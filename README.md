@@ -2,7 +2,7 @@
 
 # Purpose
 
-A tool that you may use to log off idle users at the console. This tool is not tested or intended
+A tool that you may use to log off idle users at the Windows console. This tool is not tested or intended
 to work with users that are logged in remotely (e.g. Terminal Services). You should
 use this tool as specified by this [article](https://4sysops.com/archives/automatically-log-off-idle-users-in-windows/).
 There are [other ways](https://michlstechblog.info/blog/windows-automatically-logout-a-user-on-inactive/) to accomplish this goal as well.
